@@ -1,0 +1,40 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Marburg}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Manually added
+\usepackage{natbib}
+
+\title{Automatic Summarization of Long Documents}
+\author[Naman Chhibbar \\ Abhay]{
+  Naman Chhibbar \and
+  Abhay
+}
+\institute{Indian Institute of Technology Hyderabad}
+% \date{August 2, 2024}
+
+\begin{document}
+
+  \begin{frame}
+    \titlepage
+  \end{frame}
+
+  \input{sections/data}
+
+\end{document}

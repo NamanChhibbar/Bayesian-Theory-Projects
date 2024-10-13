@@ -1,4 +1,17 @@
 temp*
+*.pdf
+
+*.out
+*.log
+*.bbl
+*.blg
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.toc
 
 
 

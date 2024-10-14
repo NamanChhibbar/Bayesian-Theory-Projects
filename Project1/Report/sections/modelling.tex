@@ -6,11 +6,11 @@ Firstly, we use a Box-Cox transformation to reduce the skewness of our data.
 Box-Cox transformation with the parameter $\lambda$ is defined as follows:
 
 \[
-\text{Box-Cox}(x_i; \lambda) =
-\begin{cases}
-\frac{1}{\lambda} (x_i ^ \lambda - 1) & \lambda \ne 0 \\
-\ln x_i & \lambda = 0
-\end{cases}
+  \text{Box-Cox}(x_i; \lambda) =
+  \begin{cases}
+    \frac{1}{\lambda} (x_i ^ \lambda - 1) & \lambda \ne 0 \\
+    \ln x_i & \lambda = 0
+  \end{cases}
 \]
 
 \noindent $\lambda > 1$ increases the data skewness whereas $\lambda < 1$ decreases the skewness.

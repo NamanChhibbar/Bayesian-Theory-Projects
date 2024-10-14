@@ -14,14 +14,14 @@ Since our conjugate prior is normal, the high density interval will be centered 
 Hence, if the posterior distribution is $\mu | \bar{x} \sim N(u', v')$ with CDF $F$, the high density interval of confidence level $\alpha$ will be $[u' - c, u' + c]$ such that:
 
 \begin{align*}
-&P(\mu |\bar{x} \in [u' - c, u' + c]) = \alpha \\
-&\Rightarrow F(u' + c) - F(u' - c) = \alpha \\
-&\Rightarrow 1 - 2F(u' - c) = \alpha \\
-&\Rightarrow F(u' - c) = \frac{1 - \alpha}{2} \\
-&\Rightarrow \Phi(\frac{(u' - c) - u'}{\sqrt{v'}}) = \frac{1 - \alpha}{2} \\
-&\Rightarrow \Phi(-\frac{c}{\sqrt{v'}}) = \frac{1 - \alpha}{2} \\
-&\Rightarrow -\frac{c}{\sqrt{v'}} = \Phi^{-1}\left(\frac{1 - \alpha}{2}\right) \\
-&\Rightarrow c = -\sqrt{v'} \cdot \Phi^{-1}\left(\frac{1 - \alpha}{2}\right)
+  &P(\mu |\bar{x} \in [u' - c, u' + c]) = \alpha \\
+  &\Rightarrow F(u' + c) - F(u' - c) = \alpha \\
+  &\Rightarrow 1 - 2F(u' - c) = \alpha \\
+  &\Rightarrow F(u' - c) = \frac{1 - \alpha}{2} \\
+  &\Rightarrow \Phi(\frac{(u' - c) - u'}{\sqrt{v'}}) = \frac{1 - \alpha}{2} \\
+  &\Rightarrow \Phi(-\frac{c}{\sqrt{v'}}) = \frac{1 - \alpha}{2} \\
+  &\Rightarrow -\frac{c}{\sqrt{v'}} = \Phi^{-1}\left(\frac{1 - \alpha}{2}\right) \\
+  &\Rightarrow c = -\sqrt{v'} \cdot \Phi^{-1}\left(\frac{1 - \alpha}{2}\right)
 \end{align*}
 
 \noindent where $\Phi$ is the CDF of the standard normal distribution.
@@ -29,8 +29,8 @@ Hence, if the posterior distribution is $\mu | \bar{x} \sim N(u', v')$ with CDF 
 Refer to \autoref{fig:hdi} for 95\% posterior HDI with $n = 10$.
 
 \begin{figure}
-    \centering
-    \includegraphics[width=.6\linewidth]{images/hdi.png}
-    \caption{95\% confidence posterior HDI}
-    \label{fig:hdi}
+  \centering
+  \includegraphics[width=.6\linewidth]{images/hdi.png}
+  \caption{95\% confidence posterior HDI}
+  \label{fig:hdi}
 \end{figure}

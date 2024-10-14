@@ -1,7 +1,11 @@
-\documentclass[10pt, twocolumn]{article}
+\documentclass[10pt]{article}
 
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[a4paper, margin=.8in]{geometry}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
 
 \setcounter{secnumdepth}{0}
 
@@ -18,7 +22,10 @@
 \begin{document}
   \maketitle
 
-  \input{sections/dataset}
-  \input{sections/modelling}
+  \input{sections/dataset.tex}
+  \input{sections/modelling.tex}
+  \input{sections/analysis.tex}
+  \input{sections/inference.tex}
+  \input{sections/conclusion.tex}
 
 \end{document}

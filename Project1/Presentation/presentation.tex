@@ -1,0 +1,46 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Marburg}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% Manually added
+\usepackage{natbib}
+
+\title{Bayesian Theory and Computation\\Project 1}
+\author[Naman Chhibbar \\ Abhay Gupta]{
+  Naman Chhibbar \and
+  Abhay Gupta
+}
+\institute{Indian Institute of Technology Hyderabad}
+% \date{August 2, 2024}
+
+\begin{document}
+
+  \begin{frame}
+    \titlepage
+  \end{frame}
+
+  \input{sections/data.tex}
+  \input{sections/modelling.tex}
+  \input{sections/analysis.tex}
+  \input{sections/conclusion.tex}
+  \input{sections/final.tex}
+
+\end{document}

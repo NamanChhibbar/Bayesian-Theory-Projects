@@ -1,9 +1,9 @@
 \documentclass[10pt]{article}
 
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage[a4paper, margin=80pt, top=30pt]{geometry}
+\usepackage[a4paper, margin=.8in]{geometry}
 
 \DeclareMathOperator*{\argmin}{arg\,min}
 
@@ -20,11 +20,12 @@
 }
 
 \begin{document}
-\maketitle
+  \maketitle
 
-\input{sections/dataset.tex}
-\input{sections/objective.tex}
-\input{sections/analysis.tex}
-\input{sections/conclusion.tex}
+  \input{sections/dataset.tex}
+  \input{sections/modelling.tex}
+  \input{sections/analysis.tex}
+  \input{sections/inference.tex}
+  \input{sections/conclusion.tex}
 
 \end{document}

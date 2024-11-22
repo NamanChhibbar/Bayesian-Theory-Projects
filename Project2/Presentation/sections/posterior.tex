@@ -1,18 +1,9 @@
 \section{Posterior}
 
-\begin{frame}{Calculating Posterior for Year 1}
-
-  \begin{itemize}
-    \item Using first month data, we treat the revenue generated as following a Normal distribution with mean as.XXXXXXXXXXXXXXX
-    \item This Normal likelihood is combined with the Normal prior, resulting in a Normal distribution for our posterior.XXXXXXXXXXXXXXXX
-    \item The posterior for first month reflects our updated belief about the product's revenue after observing first month sales.
-  \end{itemize}
-  
-\end{frame}
-
 \begin{frame}{Updating the Prior Month-by-Month}
 
   \begin{itemize}
+    \item The posterior for current month reflects our updated belief about the product's revenue after observing current month sales.
     \item For each subsequent month, we treat the posterior from the previous month as the new prior.
     \item This recursive process allows us to carry forward accumulated information, refining our estimate of the product's revenue month after month as we get more and more data.
   \end{itemize}
@@ -23,7 +14,7 @@
     
 \begin{figure}
   \centering
-  \includegraphics[width=.7\linewidth]{../Report/images/posterior-subplots.png}
+  \includegraphics[width=.7\linewidth]{../Report/images/months.png}
   \caption{Prior, Likelihood and Posterior for each month}
 \end{figure}
 
@@ -38,7 +29,7 @@
 
 \begin{figure}
   \centering
-  \includegraphics[width=.6\linewidth]{../Report/images/posterior-years.png}
+  \includegraphics[width=.6\linewidth]{../Report/images/months.png}
   \caption{Posterior Distributions Over Months}
 \end{figure}
 

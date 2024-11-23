@@ -2,28 +2,29 @@
 
 \begin{frame}{Initial Setup - Choosing a Prior}
 
-  \begin{itemize}
-    \item In this case, for our analysis purpose, we divided our data into 2 parts of 6 months.
-    \item From the first 6 months of data, we built our prior knowledge by calculating its mean and variance.
-    \item We model the data assuming it follows a normal distribution with known mean.
-Hence, data $X | \mu \sim N(\mu, \sigma^2)$, where $\sigma^2$ is known.
+\begin{itemize}
+  \item For analysis purposes, we divided our data into 2 parts spanning 6 months.
+  \item The first 6 months of data was used to build our prior knowledge.
+  \item We model the data assuming it follows a normal distribution with known mean.
+  Hence, data $X | \mu \sim N(\mu, \sigma^2)$, where $\sigma^2$ is known.
+  $$ f(x | \mu) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right) $$
+  \item We take the variance of our model to be the sample variance of the known data:
+  $$ S^2 = \sum_{i = 1}^{n} \frac{(x_i - \mu_x)^2}{n - 1} $$
+  where $\mu_x$ is the sample mean of the known data.
+\end{itemize}
 
-$$ f(x | \mu) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right) $$
-    \item We take the variance of our model to be the sample variance of the known data, where $\mu_x$ is the sample mean of the known data.
-        $$ S^2 = \sum_{i = 1}^{n} \frac{(x_i - \mu_x)^2}{n - 1} $$
-  \end{itemize}
-  
 \end{frame}
 
 
 \begin{frame}{Initial Setup - Choosing a Prior}
 
-  \begin{itemize}
-    \item We supposed $\mu \sim N(u, v)$ is the prior distribution of $\mu$.
-    \item The likelihood function, given the sample $\bar{x} = (x_1, x_2, \dots, x_n)$, can be calculated as: $$ L(\mu | \bar{x}) = \prod_{i = 1}^{n} f(x_i | \mu)$$
-    \item The posterior distribution will be: $$ \propto \exp\left(-\frac{1}{2v'} (\mu - u')^2\right)$$
-    \item where $u' = \left(u \sigma^2 + v \sum_{i = 1}^{n} x_i\right) / (n v + \sigma^2)$ and $v' = v \sigma^2/(n v + \sigma^2)$.
-    \item By the kernel of the posterior distribution, it is evident that $\mu | \bar{x} \sim N(u', v')$.
-  \end{itemize}
-  
+\begin{itemize}
+  \item We take $\mu \sim N(u, v)$ as the prior distribution of $\mu$.
+  \item The likelihood function, given the sample $\bar{x} = (x_1, x_2, \dots, x_n)$, can be calculated as: $$ L(\mu | \bar{x}) = \prod_{i = 1}^{n} f(x_i | \mu)$$
+  \item The posterior distribution will be proportional to:
+  $$ f(\mu | \bar{x}) \propto \exp\left(-\frac{1}{2v'} (\mu - u')^2\right)$$
+  where $u' = \left(u \sigma^2 + v \sum_{i = 1}^{n} x_i\right) / (n v + \sigma^2)$ and $v' = v \sigma^2/(n v + \sigma^2)$.
+  \item By the kernel of the posterior distribution, it is evident that $\mu | \bar{x} \sim N(u', v')$.
+\end{itemize}
+
 \end{frame}
